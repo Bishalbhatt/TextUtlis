@@ -1,0 +1,12 @@
+.textform{
+    margin: 2vh 3vw;
+}
+#convtouppr,#convtolower,#clrtxt,#cpytxt{
+ background-color: aqua;
+ height: 5vh;
+ padding: 0.5vw;
+ margin: 0.1vw;
+}
+.txtdsc{
+    margin: 4vh;
+}

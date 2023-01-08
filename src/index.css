@@ -1,13 +1,81 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
+.nav{
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 1vh;
+  font-size: 2.2vh;
+}
+.nav h1,p{
+  margin:10px;
+} 
+.nav p{
+  margin-top:10px;
+  font-size: 3.5vh;
+}
+#toggle{
+  height: 4vh;
+  width: 10vw;
+  margin-top: 1.5vh;
+  margin-left: 1vw;
+  color: white;
+  background-color: rgb(57, 57, 58);
+  border-radius: 10px;
+  cursor: pointer;
+}
+#toggleRed{
+  height: 4vh;
+  width: 10vw;
+  margin-top: 1.5vh;
+  margin-left: 1vw;
+  color: white;
+  background-color: #EF0107;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#toggleGreen{
+  height: 4vh;
+  width: 10vw;
+  margin-top: 1.5vh;
+  margin-left: 1vw;
+  color: black;
+  background-color: #66FF00;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* Media Query for navbar */
+@media screen and (max-width: 1150px)
+{
+  #toggle,#toggleGreen,#toggleRed{
+    width: 15vw;
+    height: 6.5vh;
+    margin-top: 0.7vh;
+  }
+  .nav{
+    width: 250%;
+  }
+}
+@media screen and (max-width: 550px)
+{
+  #toggle,#toggleGreen,#toggleRed{
+    width: 15vw;
+    height: 6.5vh;
+    margin: 0.7vh 0;
+    font-size: 1.3vh;
+  }
+  .nav p{
+    margin: 15px 5px;
+    font-size: 12px;
+  }
+  .nav h1{
+    margin: 10px 5px;
+  }
+  .nav{
+    width: 250%;
+  }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
