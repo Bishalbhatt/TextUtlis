@@ -6,10 +6,10 @@ export default function Navbar(props) {
     <div>
       <nav className="nav" style={props.mode}>
         <h1>
-          <a href="/" style={props.mode}>{props.title}</a>
+          <a href="#" style={props.mode}>{props.title}</a>
         </h1>
         <p>
-          <a href="/" style={props.mode}>Home</a>
+          <a href="#" style={props.mode}>Home</a>
         </p>
         {/*  
         <p>
